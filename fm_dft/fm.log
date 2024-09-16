@@ -1,0 +1,303 @@
+
+                                 Formality (R)
+
+               Version L-2016.03-SP1 for linux64 - Apr 13, 2016 
+
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+  ** Highlights of Formality (R) Version L-2016.03 **
+   - New alternate verification strategies for resolving inconclusive verifications
+   - Automation for deploying alternate strategies
+   - New command to export the mapping of reference to implementation registers
+   - New capability to combine PG and low power information from db libraries with Verilog functional models
+
+   * Please refer to the Formality Release Notes for details and additional enhancements
+
+Build: 4031317
+Hostname: IC (RHEL64)
+Current time: Sun Sep  4 02:12:03 2022
+
+Loading db file '/opt/Synopsys/Formality2016/libraries/syn/gtech.db'
+######################### Set Lib's ############################
+set TTLIB "../std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db"
+../std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db
+set FFLIB "../std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db"
+../std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db
+set SSLIB "../std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db"
+../std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db
+######################### Set SVF file ############################
+set_svf "../dft/System.svf"
+SVF set to '../dft/System.svf'.
+1
+################################ Read REF design####################
+set RTL_Design_Top System_top
+System_top
+read_db -container Ref [list $TTLIB $FFLIB $SSLIB]
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db'
+Created container 'Ref'
+Current container set to 'Ref'
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db'
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+1
+read_verilog -container Ref "../rtl_dft/*/*.v"
+No target library specified, default is WORK
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/ALU/ALU_TOP.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/ALU/ARITHMETIC_UNIT.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/ALU/CMP_UNIT.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/ALU/Decoder_Unit.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/ALU/LOGIC_UNIT.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/ALU/MUX4x1.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/ALU/SHIFT_UNIT.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/CLK_div/ClkDiv.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/CLK_gate/CLK_GATE.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/REG_FILE/REG_FILE.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/Sync/BIT_SYNC.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/Sync/DATA_SYNC.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/Sync/RST_SYNC.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/SYS_CTRL/FSM_1_SYS_CTRL.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/SYS_CTRL/FSM_2_SYS_CTRL.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/SYS_CTRL/SYS_CTRL.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/Sys_top/MUX2.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/Sys_top/System_top.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_RX/data_sampler.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_RX/deserializer.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_RX/edge_bit_counter.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_RX/FSM_RX.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_RX/PAR_CHK.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_RX/STP_CHK.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_RX/STR_CHK.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_RX/UART_RX.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_TOP/UART.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_TX/FSM_TX.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_TX/MUX.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_TX/Par_Calc.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_TX/serializer.v'
+Loading verilog file '/mnt/hgfs/Joe's_Backend/rtl_dft/UART_TX/UART_TX.v'
+1
+set_reference_design $RTL_Design_Top
+Reference design set to 'Ref:/WORK/System_top'
+1
+set_top $RTL_Design_Top
+Setting top design to 'Ref:/WORK/System_top'
+Status:   Elaborating design System_top   ...  
+Status:   Elaborating design MUX2   ...  
+Status:   Elaborating design SYS_CTRL   ...  
+Status:   Elaborating design FSM_1_SYS_CTRL   ...  
+Status:   Elaborating design FSM_2_SYS_CTRL   ...  
+Status:   Elaborating design REG_FILE  DATA_WIDTH='d8, DATA_DEPTH='d16 ...  
+Information: Created design named 'REG_FILE_00000008_00000010'. (FE-LINK-13)
+Status:   Elaborating design ALU_TOP  DATA_WIDTH='d8 ...  
+Information: Created design named 'ALU_TOP_00000008'. (FE-LINK-13)
+Status:   Elaborating design MUX4x1  DATA_WIDTH=16 ...  
+Information: Created design named 'MUX4x1_DATA_WIDTH16'. (FE-LINK-13)
+Status:   Elaborating design MUX4x1  DATA_WIDTH=1 ...  
+Information: Created design named 'MUX4x1_DATA_WIDTH1'. (FE-LINK-13)
+Status:   Elaborating design Decoder_Unit   ...  
+Status:   Elaborating design ARITHMETIC_UNIT  DATA_WIDTH=8 ...  
+Information: Created design named 'ARITHMETIC_UNIT_DATA_WIDTH8'. (FE-LINK-13)
+Status:   Elaborating design LOGIC_UNIT  DATA_WIDTH=8 ...  
+Information: Created design named 'LOGIC_UNIT_DATA_WIDTH8'. (FE-LINK-13)
+Status:   Elaborating design CMP_UNIT  DATA_WIDTH=8 ...  
+Information: Created design named 'CMP_UNIT_DATA_WIDTH8'. (FE-LINK-13)
+Status:   Elaborating design SHIFT_UNIT  DATA_WIDTH=8 ...  
+Information: Created design named 'SHIFT_UNIT_DATA_WIDTH8'. (FE-LINK-13)
+Status:   Elaborating design UART  DATA_WIDTH='d8, PRESCALE_WIDTH='d5 ...  
+Information: Created design named 'UART_00000008_00000005'. (FE-LINK-13)
+Status:   Elaborating design UART_TX   ...  
+Status:   Elaborating design serializer   ...  
+Status:   Elaborating design FSM_TX   ...  
+Status:   Elaborating design Par_Calc   ...  
+Status:   Elaborating design MUX  start_bit=0, stop_bit=1 ...  
+Information: Created design named 'MUX_start_bit0_stop_bit1'. (FE-LINK-13)
+Status:   Elaborating design UART_RX   ...  
+Status:   Elaborating design FSM_RX   ...  
+Status:   Elaborating design data_sampler   ...  
+Status:   Elaborating design edge_bit_counter   ...  
+Status:   Elaborating design deserializer   ...  
+Status:   Elaborating design PAR_CHK   ...  
+Status:   Elaborating design STR_CHK   ...  
+Status:   Elaborating design STP_CHK   ...  
+Status:   Elaborating design DATA_SYNC  NUM_STAGES='d2, BUS_WIDTH='d8 ...  
+Information: Created design named 'DATA_SYNC_00000002_00000008'. (FE-LINK-13)
+Status:   Elaborating design BIT_SYNC  NUM_STAGES='d2 ...  
+Information: Created design named 'BIT_SYNC_00000002'. (FE-LINK-13)
+Status:   Elaborating design RST_SYNC  NUM_STAGES='d2 ...  
+Information: Created design named 'RST_SYNC_00000002'. (FE-LINK-13)
+Status:   Elaborating design ClkDiv  RATIO_WD='d4 ...  
+Information: Created design named 'ClkDiv_00000004'. (FE-LINK-13)
+Status:   Elaborating design CLK_GATE   ...  
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  3 unlinked power cell(s) with unread pg pins.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'Ref:/WORK/System_top'
+Reference design set to 'Ref:/WORK/System_top'
+1
+set Netlist_Design_Top System_top
+System_top
+read_db -container Imp [list $TTLIB $FFLIB $SSLIB]
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db'
+Created container 'Imp'
+Current container set to 'Imp'
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db'
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+1
+read_verilog -container Imp -netlist  "../dft/netlists/System_DFT_Netlist.v"
+No target library specified, default is WORK
+Loading verilog file '/mnt/hgfs/Joe's_Backend/dft/netlists/System_DFT_Netlist.v'
+1
+set_implementation_design $Netlist_Design_Top
+Implementation design set to 'Imp:/WORK/System_top'
+1
+set_top $Netlist_Design_Top
+Setting top design to 'Imp:/WORK/System_top'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  3 unlinked power cell(s) with unread pg pins.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'Imp:/WORK/System_top'
+Implementation design set to 'Imp:/WORK/System_top'
+1
+############################### Don't verify #################################
+# do not verify scan in & scan out ports as a compare point as it is existed only after synthesis and not existed in the RTL
+#scan in
+set_dont_verify_points -type port Ref:/WORK/*/SI
+Set don't verify point 'Ref:/WORK/System_top/SI'
+1
+set_dont_verify_points -type port Imp:/WORK/*/SI
+Set don't verify point 'Imp:/WORK/System_top/SI'
+1
+#scan_out
+set_dont_verify_points -type port Ref:/WORK/*/SO
+Set don't verify point 'Ref:/WORK/System_top/SO'
+1
+set_dont_verify_points -type port Imp:/WORK/*/SO
+Set don't verify point 'Imp:/WORK/System_top/SO'
+1
+############################### contants #####################################
+# all atpg enable(test_mode, scan_enable) are zero during formal compare
+#test_mode
+set_constant Ref:/WORK/*/test_mode 0
+Set 'Ref:/WORK/System_top/test_mode' to constant 0
+1
+set_constant Imp:/WORK/*/test_mode 0
+Set 'Imp:/WORK/System_top/test_mode' to constant 0
+1
+#scan_enable
+set_constant Ref:/WORK/*/SE 0
+Set 'Ref:/WORK/System_top/SE' to constant 0
+1
+set_constant Imp:/WORK/*/SE 0
+Set 'Imp:/WORK/System_top/SE' to constant 0
+1
+################################ Match #######################################
+match
+Reference design is 'Ref:/WORK/System_top'
+Implementation design is 'Imp:/WORK/System_top'
+Status:  Checking designs...
+    Warning: 1 (12) undriven nets found in reference (implementation) design; see formality.log for list (FM-399)
+Status:  Building verification models...
+Status:  Processing Guide Commands...
+
+***************************** Guidance Summary *****************************
+                                         Status
+Command                 Accepted   Rejected  Unsupported  Unprocessed  Total
+----------------------------------------------------------------------------
+environment         :          3          0          0          0          3
+instance_map        :         32          0          0          0         32
+mark                :         16          0          0          0         16
+multiplier          :          2          0          0          0          2
+reg_constant        :          6          0          0          0          6
+scan_input          :          0          2          0          0          2
+transformation
+   map              :         12          0          0          0         12
+   share            :          4          0          0          0          4
+uniquify            :         28          2          0          0         30
+ununiquify          :          2          0          0          0          2
+
+Note: If verification succeeds you can safely ignore unaccepted guidance commands.
+
+SVF files read:
+      ../dft/System.svf
+
+SVF files produced:
+  /mnt/hgfs/Joe's_Backend/fm_dft/formality_svf/
+    svf.txt
+****************************************************************************
+
+Status:  Matching...
+    
+*********************************** Matching Results ***********************************    
+ 265 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 5 Matched primary inputs, black-box outputs    
+ 1(2) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+ 22(2) Unmatched reference(implementation) unread points    
+----------------------------------------------------------------------------------------    
+Unmatched Objects                                                        REF        IMPL    
+----------------------------------------------------------------------------------------    
+ Cut-points (Cut)                                                          1           0    
+ Output ports (Port)                                                       0           2    
+****************************************************************************************
+
+1
+################################# verify ####################################
+set successful [verify]
+Reference design is 'Ref:/WORK/System_top'
+Implementation design is 'Imp:/WORK/System_top'
+    
+*********************************** Matching Results ***********************************    
+ 265 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 5 Matched primary inputs, black-box outputs    
+ 1(2) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+ 22(2) Unmatched reference(implementation) unread points    
+----------------------------------------------------------------------------------------    
+Unmatched Objects                                                        REF        IMPL    
+----------------------------------------------------------------------------------------    
+ Cut-points (Cut)                                                          1           0    
+ Output ports (Port)                                                       0           2    
+****************************************************************************************
+
+Status:  Verifying...
+
+********************************* Verification Results *********************************
+Verification SUCCEEDED
+----------------------
+ Reference design: Ref:/WORK/System_top
+ Implementation design: Imp:/WORK/System_top
+ 265 Passing compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)           0       0       0       0       1     263       1     265
+Failing (not equivalent)       0       0       0       0       0       0       0       0
+Not Compared
+  Don't verify                 0       0       0       0       1       0       0       1
+  Unread                       0       0       0       0       0       5       0       5
+****************************************************************************************
+1
+if {!$successful} {
+diagnose
+analyze_points -failing
+}
+################################## reporting #################################
+report_passing_points > "reports/passing_points.rpt"
+report_failing_points > "reports/failing_points.rpt"
+report_aborted_points > "reports/aborted_points.rpt"
+report_unverified_points > "reports/unverified_points.rpt"
+start_gui
