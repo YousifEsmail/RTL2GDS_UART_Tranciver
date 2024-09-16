@@ -1,0 +1,1352 @@
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+                 Version K-2015.06 for linux64 - May 28, 2015 
+                                        
+                    Copyright (c) 1988 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/IC/.synopsys_dv_prefs.tcl
+#################################### Set System top ##################################
+set Design_Top System_top
+System_top
+########################################## Set SVF ########################################
+set_svf System.svf
+1
+#################################### derfine work path ##################################
+define_design_lib work -path ./work
+1
+#######################################################################################
+#################################### STD cell's search path ###########################
+lappend search_path ../rtl
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl
+lappend search_path ../rtl/ALU
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU
+lappend search_path ../rtl/CLK_div
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div
+lappend search_path ../rtl/CLK_gate
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate
+lappend search_path ../rtl/REG_FILE
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate ../rtl/REG_FILE
+lappend search_path ../rtl/Sync
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate ../rtl/REG_FILE ../rtl/Sync
+lappend search_path ../rtl/SYS_CTRL
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate ../rtl/REG_FILE ../rtl/Sync ../rtl/SYS_CTRL
+lappend search_path ../rtl/UART_RX
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate ../rtl/REG_FILE ../rtl/Sync ../rtl/SYS_CTRL ../rtl/UART_RX
+lappend search_path ../rtl/UART_TOP
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate ../rtl/REG_FILE ../rtl/Sync ../rtl/SYS_CTRL ../rtl/UART_RX ../rtl/UART_TOP
+lappend search_path ../rtl/UART_TX
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate ../rtl/REG_FILE ../rtl/Sync ../rtl/SYS_CTRL ../rtl/UART_RX ../rtl/UART_TOP ../rtl/UART_TX
+lappend search_path ../rtl/Sys_top
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate ../rtl/REG_FILE ../rtl/Sync ../rtl/SYS_CTRL ../rtl/UART_RX ../rtl/UART_TOP ../rtl/UART_TX ../rtl/Sys_top
+lappend search_path ../std_cells
+. /opt/Synopsys/Synplify2015/libraries/syn /opt/Synopsys/Synplify2015/minpower/syn /opt/Synopsys/Synplify2015/dw/syn_ver /opt/Synopsys/Synplify2015/dw/sim_ver ../rtl ../rtl/ALU ../rtl/CLK_div ../rtl/CLK_gate ../rtl/REG_FILE ../rtl/Sync ../rtl/SYS_CTRL ../rtl/UART_RX ../rtl/UART_TOP ../rtl/UART_TX ../rtl/Sys_top ../std_cells
+###################################### Std lib's ##########################################
+set SSLIB "scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db"
+scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db
+set TTLIB "scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db"
+scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db
+set FFLIB "scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db"
+scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db
+## Standard Cell libraries 
+set target_library [list $SSLIB $TTLIB $FFLIB]
+scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db
+## Standard Cell & Hard Macros libraries 
+set link_library [list * $SSLIB $TTLIB $FFLIB]  
+* scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db
+###################################### Read RTL files ##########################################
+read_file {../rtl/} -autoread -recursive -format verilog -top System_top
+== READ_FILE autoread for top design 'System_top' ==
+
+Starting READ_FILE autoread mode...
+Warning: Defining design library 'WORK' at directory '/mnt/hgfs/Joe's_Backend/syn/WORK_autoread'. (AUTOREAD-107)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/CLK_div'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/CLK_gate'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/REG_FILE'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Sync'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Sys_top'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TOP'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TX'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU/ALU_TOP.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU/ALU_TOP_tb.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU/CMP_UNIT.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU/Decoder_Unit.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU/MUX4x1.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/CLK_div/ClkDiv.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/CLK_gate/CLK_GATE.v'.  (AUTOREAD-100)
+Information: Source System_final.cr.mti ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source System_final.mpf ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source vsim.wlf ignored by autoread due to filtering.  (AUTOREAD-102)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@a@l@u_@t@o@p'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@a@l@u_@t@o@p'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@a@l@u_@t@o@p_tb'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@a@l@u_@t@o@p_tb'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@a@r@i@t@h@m@e@t@i@c_@u@n@i@t'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@a@r@i@t@h@m@e@t@i@c_@u@n@i@t'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@b@i@t_@s@y@n@c'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@b@i@t_@s@y@n@c'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@b@u@s_@s@y@n@c'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@b@u@s_@s@y@n@c'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@c@l@k_@g@a@t@e'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@c@l@k_@g@a@t@e'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@c@m@p_@u@n@i@t'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@c@m@p_@u@n@i@t'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@clk@div'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@clk@div'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@d@a@t@a_@s@y@n@c'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@d@a@t@a_@s@y@n@c'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@decoder_@unit'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@decoder_@unit'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@f@s@m_1_@s@y@s_@c@t@r@l'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@f@s@m_1_@s@y@s_@c@t@r@l'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@f@s@m_2_@s@y@s_@c@t@r@l'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@f@s@m_2_@s@y@s_@c@t@r@l'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@f@s@m_@r@x'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@f@s@m_@r@x'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@f@s@m_@t@x'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@f@s@m_@t@x'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@l@o@g@i@c_@u@n@i@t'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@l@o@g@i@c_@u@n@i@t'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@m@u@x'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@m@u@x'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@m@u@x4x1'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@m@u@x4x1'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@p@a@r_@c@h@k'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@p@a@r_@c@h@k'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@par_@calc'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@par_@calc'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@r@e@g_@f@i@l@e'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@r@e@g_@f@i@l@e'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@r@e@g_@f@i@l@e_tb'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@r@e@g_@f@i@l@e_tb'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@r@s@t_@s@y@n@c'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@r@s@t_@s@y@n@c'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@h@i@f@t_@u@n@i@t'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@h@i@f@t_@u@n@i@t'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@t@p_@c@h@k'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@t@p_@c@h@k'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@t@r_@c@h@k'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@t@r_@c@h@k'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@y@s_@c@t@r@l'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@y@s_@c@t@r@l'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@y@s_@t@o@p_@t@b'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@s@y@s_@t@o@p_@t@b'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@system_top'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@system_top'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t_@r@x'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t_@r@x'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t_@r@x_tb'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t_@r@x_tb'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t_@t@x'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t_@t@x'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t_@t@x_tb'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/@u@a@r@t_@t@x_tb'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/data_sampler'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/data_sampler'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/deserializer'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/deserializer'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/edge_bit_counter'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/edge_bit_counter'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/serializer'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/serializer'.  (AUTOREAD-100)
+Information: Source _info ignored by autoread due to filtering.  (AUTOREAD-102)
+Warning: Adding missing directory to search_path - '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/_temp'. (AUTOREAD-105)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Model_sim_proj/work/_temp'.  (AUTOREAD-100)
+Information: Source _vmake ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.prw ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source verilog.psm ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dat ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.dbs ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source _primary.vhd ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/REG_FILE/REG_FILE.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/REG_FILE/REG_FILE_tb.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/SYS_CTRL.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Sync/BIT_SYNC.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Sync/DATA_SYNC.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Sync/RST_SYNC.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/Sys_top/SYS_TOP_TB.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/data_sampler.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/deserializer.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/FSM_RX.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/PAR_CHK.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/STP_CHK.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/STR_CHK.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX_tb.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TOP/UART.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TX/FSM_TX.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TX/MUX.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TX/Par_Calc.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TX/serializer.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TX/UART_TX.v'.  (AUTOREAD-100)
+Information: Adding '/mnt/hgfs/Joe's_Backend/rtl/UART_TX/UART_TX_tb.v'.  (AUTOREAD-100)
+Information: Scanning file { ALU_TOP.v }. (AUTOREAD-303)
+Information: Scanning file { ALU_TOP_tb.v }. (AUTOREAD-303)
+Information: Scanning file { ARITHMETIC_UNIT.v }. (AUTOREAD-303)
+Information: Scanning file { CMP_UNIT.v }. (AUTOREAD-303)
+Information: Scanning file { Decoder_Unit.v }. (AUTOREAD-303)
+Information: Scanning file { LOGIC_UNIT.v }. (AUTOREAD-303)
+Information: Scanning file { MUX4x1.v }. (AUTOREAD-303)
+Information: Scanning file { SHIFT_UNIT.v }. (AUTOREAD-303)
+Information: Scanning file { ClkDiv.v }. (AUTOREAD-303)
+Information: Scanning file { CLK_GATE.v }. (AUTOREAD-303)
+Information: Scanning file { REG_FILE.v }. (AUTOREAD-303)
+Information: Scanning file { REG_FILE_tb.v }. (AUTOREAD-303)
+Information: Scanning file { FSM_1_SYS_CTRL.v }. (AUTOREAD-303)
+Information: Scanning file { FSM_2_SYS_CTRL.v }. (AUTOREAD-303)
+Information: Scanning file { SYS_CTRL.v }. (AUTOREAD-303)
+Information: Scanning file { BIT_SYNC.v }. (AUTOREAD-303)
+Information: Scanning file { DATA_SYNC.v }. (AUTOREAD-303)
+Information: Scanning file { RST_SYNC.v }. (AUTOREAD-303)
+Information: Scanning file { System_top.v }. (AUTOREAD-303)
+Information: Scanning file { SYS_TOP_TB.v }. (AUTOREAD-303)
+Information: Scanning file { data_sampler.v }. (AUTOREAD-303)
+Information: Scanning file { deserializer.v }. (AUTOREAD-303)
+Information: Scanning file { edge_bit_counter.v }. (AUTOREAD-303)
+Information: Scanning file { FSM_RX.v }. (AUTOREAD-303)
+Information: Scanning file { PAR_CHK.v }. (AUTOREAD-303)
+Information: Scanning file { STP_CHK.v }. (AUTOREAD-303)
+Information: Scanning file { STR_CHK.v }. (AUTOREAD-303)
+Information: Scanning file { UART_RX.v }. (AUTOREAD-303)
+Information: Scanning file { UART_RX_tb.v }. (AUTOREAD-303)
+Information: Scanning file { UART.v }. (AUTOREAD-303)
+Information: Scanning file { FSM_TX.v }. (AUTOREAD-303)
+Information: Scanning file { MUX.v }. (AUTOREAD-303)
+Information: Scanning file { Par_Calc.v }. (AUTOREAD-303)
+Information: Scanning file { serializer.v }. (AUTOREAD-303)
+Information: Scanning file { UART_TX.v }. (AUTOREAD-303)
+Information: Scanning file { UART_TX_tb.v }. (AUTOREAD-303)
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/SYS_CTRL.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/REG_FILE/REG_FILE.v
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/REG_FILE/REG_FILE.v:26: The value 000011101 is too large for the numeric data type being used (VER-1)
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/ALU/MUX4x1.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/ALU/Decoder_Unit.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/ALU/CMP_UNIT.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/ALU/ALU_TOP.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_TX/serializer.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_TX/FSM_TX.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_TX/Par_Calc.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_TX/MUX.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_TX/UART_TX.v
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_TX/UART_TX.v:16: the undeclared symbol 'ser_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_TX/UART_TX.v:19: the undeclared symbol 'ser_done' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_TX/UART_TX.v:20: the undeclared symbol 'ser_data' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_TX/UART_TX.v:32: the undeclared symbol 'PAR_Calc_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_TX/UART_TX.v:39: the undeclared symbol 'PAR_bit' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_RX/FSM_RX.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_RX/data_sampler.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_RX/deserializer.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_RX/PAR_CHK.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_RX/STR_CHK.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_RX/STP_CHK.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:22: the undeclared symbol 'Par_err' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:23: the undeclared symbol 'STR_err' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:24: the undeclared symbol 'STP_err' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:27: the undeclared symbol 'par_chk_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:28: the undeclared symbol 'enable' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:29: the undeclared symbol 'dat_samp_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:30: the undeclared symbol 'str_chk_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:31: the undeclared symbol 'stp_chk_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:33: the undeclared symbol 'deser_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:34: the undeclared symbol 'PAR_CHK_New_bit' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:35: the undeclared symbol 'reset_bit_cnt' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:38: the undeclared symbol 'deser_New_bit' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/UART_RX.v:52: the undeclared symbol 'sampled_bit' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/UART_TOP/UART.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/Sync/DATA_SYNC.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/Sync/BIT_SYNC.v
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sync/BIT_SYNC.v:36: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/Sync/RST_SYNC.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/CLK_div/ClkDiv.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/CLK_gate/CLK_GATE.v
+Presto compilation completed successfully.
+Compiling source file /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:37: the undeclared symbol 'Rd_VLD' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:39: the undeclared symbol 'ALU_vld_OUT' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:40: the undeclared symbol 'BUSY' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:41: the undeclared symbol 'TX_VLD' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:43: the undeclared symbol 'Rx_valid' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:45: the undeclared symbol 'RdEn' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:47: the undeclared symbol 'WrEn' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:48: the undeclared symbol 'Gate_En' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:51: the undeclared symbol 'ALU_EN' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:81: the undeclared symbol 'GATED_CLK' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:97: the undeclared symbol 'TX_CLK' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:101: the undeclared symbol 'RX_OUT_V' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:103: the undeclared symbol 'TX_IN_V' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/Sys_top/System_top.v:105: the undeclared symbol 'TX_OUT_V' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Elaborating top design System_top
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db'
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db'
+Loading db file '/opt/Synopsys/Synplify2015/libraries/syn/gtech.db'
+Loading db file '/opt/Synopsys/Synplify2015/libraries/syn/standard.sldb'
+  Loading link library 'scmetro_tsmc_cl013g_rvt_ss_1p08v_125c'
+  Loading link library 'scmetro_tsmc_cl013g_rvt_tt_1p2v_25c'
+  Loading link library 'scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'System_top'.
+Information: Building the design 'SYS_CTRL'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'REG_FILE' instantiated from design 'System_top' with
+	the parameters "DATA_WIDTH=32'h00000008,DATA_DEPTH=32'h00000010". (HDL-193)
+
+Statistics for case statements in always block at line 21 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/REG_FILE/REG_FILE.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            44            |    auto/auto     |
+|            67            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine REG_FILE_00000008_00000010 line 21 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/REG_FILE/REG_FILE.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     RdData_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     Rd_VLD_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    Reg_File_reg     | Flip-flop |  123  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    Reg_File_reg     | Flip-flop |   5   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ALU_TOP' instantiated from design 'System_top' with
+	the parameters "DATA_WIDTH=32'h00000008". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'UART' instantiated from design 'System_top' with
+	the parameters "DATA_WIDTH=32'h00000008,PRESCALE_WIDTH=32'h00000005". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'DATA_SYNC' instantiated from design 'System_top' with
+	the parameters "NUM_STAGES=32'h00000002,BUS_WIDTH=32'h00000008". (HDL-193)
+
+Inferred memory devices in process
+	in routine DATA_SYNC_00000002_00000008 line 16 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/Sync/DATA_SYNC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   SYNC_enable_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| MULT_FLOP_SYNC_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine DATA_SYNC_00000002_00000008 line 29 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/Sync/DATA_SYNC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  pulse_Gen_ff_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine DATA_SYNC_00000002_00000008 line 44 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/Sync/DATA_SYNC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  enable_pulse_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine DATA_SYNC_00000002_00000008 line 57 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/Sync/DATA_SYNC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    sync_bus_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'BIT_SYNC' instantiated from design 'System_top' with
+	the parameters "NUM_STAGES=32'h00000002". (HDL-193)
+
+Inferred memory devices in process
+	in routine BIT_SYNC_00000002 line 10 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/Sync/BIT_SYNC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      SYNC_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| MULT_FLOP_SYNC_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RST_SYNC' instantiated from design 'System_top' with
+	the parameters "NUM_STAGES=32'h00000002". (HDL-193)
+
+Inferred memory devices in process
+	in routine RST_SYNC_00000002 line 9 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/Sync/RST_SYNC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    SYNC_RST_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| MULT_FLOP_SYNC_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ClkDiv' instantiated from design 'System_top' with
+	the parameters "RATIO_WD=32'h00000004". (HDL-193)
+
+Inferred memory devices in process
+	in routine ClkDiv_00000004 line 27 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/CLK_div/ClkDiv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  odd_edge_tog_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     div_clk_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      count_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'CLK_GATE'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FSM_1_SYS_CTRL'. (HDL-193)
+
+Statistics for case statements in always block at line 52 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            54            |    auto/auto     |
+|            71            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 158 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           168            |    auto/auto     |
+|           184            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_1_SYS_CTRL line 36 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Addr_reg_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  current_state_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FSM_2_SYS_CTRL'. (HDL-193)
+
+Statistics for case statements in always block at line 45 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            47            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 132 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           138            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_2_SYS_CTRL line 31 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'MUX4x1' instantiated from design 'ALU_TOP_00000008' with
+	the parameters "DATA_WIDTH=16". (HDL-193)
+
+Statistics for case statements in always block at line 20 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/ALU/MUX4x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            22            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'MUX4x1' instantiated from design 'ALU_TOP_00000008' with
+	the parameters "DATA_WIDTH=1". (HDL-193)
+
+Statistics for case statements in always block at line 20 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/ALU/MUX4x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            22            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Decoder_Unit'. (HDL-193)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/ALU/Decoder_Unit.v:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 11 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/ALU/Decoder_Unit.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ARITHMETIC_UNIT' instantiated from design 'ALU_TOP_00000008' with
+	the parameters "DATA_WIDTH=8". (HDL-193)
+
+Statistics for case statements in always block at line 18 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ARITHMETIC_UNIT_DATA_WIDTH8 line 38 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Arith_OUT_reg_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| Arith_Flag_reg_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  Carry_OUT_reg_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LOGIC_UNIT' instantiated from design 'ALU_TOP_00000008' with
+	the parameters "DATA_WIDTH=8". (HDL-193)
+
+Statistics for case statements in always block at line 16 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            21            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LOGIC_UNIT_DATA_WIDTH8 line 36 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| Logic_Flag_reg_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  Logic_OUT_reg_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'CMP_UNIT' instantiated from design 'ALU_TOP_00000008' with
+	the parameters "DATA_WIDTH=8". (HDL-193)
+
+Statistics for case statements in always block at line 17 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/ALU/CMP_UNIT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            22            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CMP_UNIT_DATA_WIDTH8 line 58 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/ALU/CMP_UNIT.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  CMP_Flag_reg_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   CMP_OUT_reg_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'SHIFT_UNIT' instantiated from design 'ALU_TOP_00000008' with
+	the parameters "DATA_WIDTH=8". (HDL-193)
+
+Statistics for case statements in always block at line 20 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            25            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine SHIFT_UNIT_DATA_WIDTH8 line 40 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| SHIFT_Flag_reg_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  SHIFT_OUT_reg_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'UART_TX'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'UART_RX'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'serializer'. (HDL-193)
+
+Inferred memory devices in process
+	in routine serializer line 14 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_TX/serializer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    ser_Count_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ser_done_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    ser_data_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|  serializer/36   |   8    |    1    |      3       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'FSM_TX'. (HDL-193)
+
+Statistics for case statements in always block at line 42 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/UART_TX/FSM_TX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            44            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_TX line 27 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_TX/FSM_TX.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  curent_state_reg   | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Par_Calc'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'MUX' instantiated from design 'UART_TX' with
+	the parameters "start_bit=0,stop_bit=1". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/UART_TX/MUX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FSM_RX'. (HDL-193)
+
+Statistics for case statements in always block at line 53 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/FSM_RX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            55            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_RX line 40 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/FSM_RX.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  curent_state_reg   | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'data_sampler'. (HDL-193)
+Warning:  /mnt/hgfs/Joe's_Backend/rtl/UART_RX/data_sampler.v:146: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/data_sampler.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+|            31            |    auto/auto     |
+|            64            |    auto/auto     |
+|            97            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 138 in file
+	'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/data_sampler.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           146            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine data_sampler line 18 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/data_sampler.v'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+|   sampled_bit_reg_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| internal_sampled_bit_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+====================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'edge_bit_counter'. (HDL-193)
+
+Inferred memory devices in process
+	in routine edge_bit_counter line 11 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    edge_cnt_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine edge_bit_counter line 35 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     bit_cnt_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'deserializer'. (HDL-193)
+
+Inferred memory devices in process
+	in routine deserializer line 14 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/deserializer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    shift_reg_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'PAR_CHK'. (HDL-193)
+
+Inferred memory devices in process
+	in routine PAR_CHK line 17 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/PAR_CHK.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    shift_reg_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine PAR_CHK line 38 in file
+		'/mnt/hgfs/Joe's_Backend/rtl/UART_RX/PAR_CHK.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     TX_Par_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     PAR_bit_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'STR_CHK'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'STP_CHK'. (HDL-193)
+Presto compilation completed successfully.
+Autoread command completed successfully.
+###################################### define top level ##########################################
+current_design System_top
+Current design is 'System_top'.
+{System_top}
+###################################### link #####################################################
+link
+
+  Linking design 'System_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (32 designs)              /mnt/hgfs/Joe's_Backend/syn/System_top.db, etc
+  scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (library) /mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db
+  scmetro_tsmc_cl013g_rvt_tt_1p2v_25c (library) /mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db
+  scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c (library) /mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db
+
+1
+######################################## check design ###########################################
+uniquify
+Information: Uniquified 2 instances of design 'DATA_SYNC_00000002_00000008'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RST_SYNC_00000002'. (OPT-1056)
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Sat Sep  3 20:17:29 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     12
+    Unconnected ports (LINT-28)                                     4
+    Shorted outputs (LINT-31)                                       4
+    Constant outputs (LINT-52)                                      4
+
+Cells                                                              43
+    Cells do not drive (LINT-1)                                    17
+    Connected to power or ground (LINT-32)                         25
+    Nets connected to multiple pins on same cell (LINT-33)          1
+
+Nets                                                               13
+    Unloaded nets (LINT-2)                                         13
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv_00000004', cell 'C96' does not drive any nets. (LINT-1)
+Warning: In design 'ARITHMETIC_UNIT_DATA_WIDTH8', cell 'C79' does not drive any nets. (LINT-1)
+Warning: In design 'ARITHMETIC_UNIT_DATA_WIDTH8', cell 'C80' does not drive any nets. (LINT-1)
+Warning: In design 'ARITHMETIC_UNIT_DATA_WIDTH8', cell 'C81' does not drive any nets. (LINT-1)
+Warning: In design 'ARITHMETIC_UNIT_DATA_WIDTH8', cell 'C82' does not drive any nets. (LINT-1)
+Warning: In design 'CMP_UNIT_DATA_WIDTH8', cell 'C68' does not drive any nets. (LINT-1)
+Warning: In design 'CMP_UNIT_DATA_WIDTH8', cell 'C70' does not drive any nets. (LINT-1)
+Warning: In design 'CMP_UNIT_DATA_WIDTH8', cell 'C72' does not drive any nets. (LINT-1)
+Warning: In design 'serializer', cell 'C70' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_10' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'C244' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'C255' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampler', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C94' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C104' does not drive any nets. (LINT-1)
+Warning: In design 'System_top', net 'Reg_3_top[4]' driven by pin 'u_REG_FILE/Reg_3[4]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'Reg_3_top[5]' driven by pin 'u_REG_FILE/Reg_3[5]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'Reg_3_top[6]' driven by pin 'u_REG_FILE/Reg_3[6]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'Reg_3_top[7]' driven by pin 'u_REG_FILE/Reg_3[7]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'Reg_2_top[7]' driven by pin 'u_REG_FILE/Reg_2[7]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'ALU_FUNC[4]' driven by pin 'u_SYS_CTRL/Func[4]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'ALU_FUNC[5]' driven by pin 'u_SYS_CTRL/Func[5]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'ALU_FUNC[6]' driven by pin 'u_SYS_CTRL/Func[6]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'ALU_FUNC[7]' driven by pin 'u_SYS_CTRL/Func[7]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'Address[4]' driven by pin 'u_SYS_CTRL/Addr[4]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'Address[5]' driven by pin 'u_SYS_CTRL/Addr[5]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'Address[6]' driven by pin 'u_SYS_CTRL/Addr[6]' has no loads. (LINT-2)
+Warning: In design 'System_top', net 'Address[7]' driven by pin 'u_SYS_CTRL/Addr[7]' has no loads. (LINT-2)
+Warning: In design 'FSM_2_SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'Par_Calc', port 'Data_Valid' is not connected to any nets. (LINT-28)
+Warning: In design 'MUX_start_bit0_stop_bit1', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'deser_en' is not connected to any nets. (LINT-28)
+Warning: In design 'FSM_1_SYS_CTRL', output port 'Func[7]' is connected directly to output port 'Func[4]'. (LINT-31)
+Warning: In design 'FSM_1_SYS_CTRL', output port 'Func[7]' is connected directly to output port 'Func[5]'. (LINT-31)
+Warning: In design 'FSM_1_SYS_CTRL', output port 'Func[7]' is connected directly to output port 'Func[6]'. (LINT-31)
+Warning: In design 'FSM_RX', output port 'data_valid' is connected directly to output port 'deser_en'. (LINT-31)
+Warning: In design 'System_top', a pin on submodule 'U0_ClkDiv' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_clk_en' is connected to logic 1. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN2[15]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN2[14]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN2[13]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN2[12]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN2[11]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN2[10]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN2[9]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN2[8]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN3[15]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN3[14]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN3[13]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN3[12]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN3[11]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN3[10]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN3[9]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN3[8]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN4[15]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN4[14]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN4[13]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN4[12]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN4[11]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN4[10]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN4[9]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', a pin on submodule 'u_ALUout_MUX4x1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN4[8]' is connected to logic 0. 
+Warning: In design 'ALU_TOP_00000008', the same net is connected to more than one pin on submodule 'u_ALUout_MUX4x1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'IN2[15]', 'IN2[14]'', 'IN2[13]', 'IN2[12]', 'IN2[11]', 'IN2[10]', 'IN2[9]', 'IN2[8]', 'IN3[15]', 'IN3[14]', 'IN3[13]', 'IN3[12]', 'IN3[11]', 'IN3[10]', 'IN3[9]', 'IN3[8]', 'IN4[15]', 'IN4[14]', 'IN4[13]', 'IN4[12]', 'IN4[11]', 'IN4[10]', 'IN4[9]', 'IN4[8]'.
+Warning: In design 'FSM_1_SYS_CTRL', output port 'Func[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'FSM_1_SYS_CTRL', output port 'Func[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'FSM_1_SYS_CTRL', output port 'Func[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'FSM_1_SYS_CTRL', output port 'Func[4]' is connected directly to 'logic 0'. (LINT-52)
+1
+##########################################define design Constraints#############################
+source ./cons.tcl
+Using operating conditions 'scmetro_tsmc_cl013g_rvt_ss_1p08v_125c' found in library 'scmetro_tsmc_cl013g_rvt_ss_1p08v_125c'.
+Using operating conditions 'scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c' found in library 'scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c'.
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+1
+########################################## Compile ########################
+compile 
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 68 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition scmetro_tsmc_cl013g_rvt_ss_1p08v_125c set on design System_top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+scmetro_tsmc_cl013g_rvt_tt_1p2v_25c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'CLK_GATE'
+  Processing 'ClkDiv_00000004'
+  Processing 'RST_SYNC_00000002_0'
+  Processing 'BIT_SYNC_00000002'
+  Processing 'DATA_SYNC_00000002_00000008_0'
+  Processing 'STP_CHK'
+  Processing 'STR_CHK'
+  Processing 'PAR_CHK'
+  Processing 'deserializer'
+  Processing 'edge_bit_counter'
+  Processing 'data_sampler'
+  Processing 'FSM_RX'
+  Processing 'UART_RX'
+  Processing 'MUX_start_bit0_stop_bit1'
+  Processing 'Par_Calc'
+  Processing 'FSM_TX'
+  Processing 'serializer'
+  Processing 'UART_TX'
+  Processing 'UART_00000008_00000005'
+  Processing 'SHIFT_UNIT_DATA_WIDTH8'
+  Processing 'CMP_UNIT_DATA_WIDTH8'
+Information: The register 'CMP_OUT_reg_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'CMP_OUT_reg_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'CMP_OUT_reg_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'CMP_OUT_reg_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'CMP_OUT_reg_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'CMP_OUT_reg_reg[2]' is a constant and will be removed. (OPT-1206)
+  Processing 'LOGIC_UNIT_DATA_WIDTH8'
+  Processing 'ARITHMETIC_UNIT_DATA_WIDTH8'
+  Processing 'Decoder_Unit'
+  Processing 'MUX4x1_DATA_WIDTH1'
+  Processing 'MUX4x1_DATA_WIDTH16'
+  Processing 'ALU_TOP_00000008'
+  Processing 'REG_FILE_00000008_00000010'
+  Processing 'FSM_2_SYS_CTRL'
+  Processing 'FSM_1_SYS_CTRL'
+  Processing 'SYS_CTRL'
+  Processing 'System_top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	u_UART/u_UART_RX_top/u_FSM/U25/AN u_UART/u_UART_RX_top/u_FSM/U25/Y u_UART/u_UART_RX_top/u_FSM/U24/C u_UART/u_UART_RX_top/u_FSM/U24/Y u_UART/u_UART_RX_top/u_FSM/U15/BN u_UART/u_UART_RX_top/u_FSM/U15/Y u_UART/u_UART_RX_top/u_data_sampler/U5/A u_UART/u_UART_RX_top/u_data_sampler/U5/Y u_UART/u_UART_RX_top/u_data_sampler/U3/A1N u_UART/u_UART_RX_top/u_data_sampler/U3/Y u_UART/u_UART_RX_top/u_STR_CHK/U2/A u_UART/u_UART_RX_top/u_STR_CHK/U2/Y 
+Warning: Disabling timing arc between pins 'AN' and 'Y' on cell 'u_UART/u_UART_RX_top/u_FSM/U25'
+         to break a timing loop. (OPT-314)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'edge_bit_counter_DW01_inc_0'
+  Processing 'edge_bit_counter_DW01_cmp6_0'
+  Processing 'data_sampler_DW01_cmp6_0'
+  Processing 'FSM_RX_DW01_cmp6_0'
+  Processing 'CMP_UNIT_DATA_WIDTH8_DW01_cmp6_0'
+  Processing 'ARITHMETIC_UNIT_DATA_WIDTH8_DW_div_uns_0'
+  Processing 'ARITHMETIC_UNIT_DATA_WIDTH8_DW01_sub_0'
+  Processing 'ARITHMETIC_UNIT_DATA_WIDTH8_DW01_add_0'
+  Processing 'ARITHMETIC_UNIT_DATA_WIDTH8_DW02_mult_0'
+  Processing 'ARITHMETIC_UNIT_DATA_WIDTH8_DW01_add_1'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07  233303.7      0.00       0.0       4.8                          
+    0:00:07  233303.7      0.00       0.0       4.8                          
+    0:00:07  233303.7      0.00       0.0       4.8                          
+    0:00:07  233303.7      0.00       0.0       4.8                          
+    0:00:07  233303.7      0.00       0.0       4.8                          
+    0:00:08  216735.9      2.64       2.6       2.0                          
+    0:00:08  216141.7      1.33       1.3       1.9                          
+    0:00:09  216258.2      0.14       0.1       1.9                          
+    0:00:09  216364.9      0.00       0.0       1.9                          
+    0:00:09  216315.5      0.20       0.2       1.9                          
+    0:00:09  216454.3      0.00       0.0       1.9                          
+    0:00:09  216381.4      0.10       0.1       1.9                          
+    0:00:09  216337.0      0.00       0.0       1.9                          
+    0:00:09  216333.5      0.00       0.0       1.9                          
+    0:00:09  216333.5      0.00       0.0       1.9                          
+    0:00:09  216333.5      0.00       0.0       1.9                          
+    0:00:09  216319.4      0.00       0.0       1.9                          
+    0:00:09  216319.4      0.00       0.0       1.9                          
+    0:00:09  216408.0      0.00       0.0       0.0                          
+    0:00:09  216408.0      0.00       0.0       0.0                          
+    0:00:09  216408.0      0.00       0.0       0.0                          
+    0:00:09  216408.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09  216408.0      0.00       0.0       0.0                          
+    0:00:09  216408.0      0.00       0.0       0.0                          
+    0:00:09  215795.9      0.00       0.0       1.7                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09  215795.9      0.00       0.0       1.7                          
+    0:00:09  215804.1      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09  215804.1      0.00       0.0       0.0                          
+    0:00:09  215804.1      0.00       0.0       0.0                          
+    0:00:10  214539.8      0.05       0.1       0.0                          
+    0:00:10  213728.4      0.05       0.1       0.0                          
+    0:00:10  213576.6      0.05       0.1       0.0                          
+    0:00:10  213525.2      0.05       0.1       0.0                          
+    0:00:10  213424.8      0.05       0.1       0.0                          
+    0:00:10  213424.8      0.05       0.1       0.0                          
+    0:00:10  213426.0      0.00       0.0       0.0                          
+    0:00:10  213257.8      0.89       0.9       0.0                          
+    0:00:10  213257.8      0.89       0.9       0.0                          
+    0:00:10  213257.8      0.89       0.9       0.0                          
+    0:00:10  213257.8      0.89       0.9       0.0                          
+    0:00:10  213257.8      0.89       0.9       0.0                          
+    0:00:10  213257.8      0.89       0.9       0.0                          
+    0:00:10  213344.8      0.00       0.0       0.0                          
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db'
+Loading db file '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+########################################## write op file ########################
+write_file -format verilog -hierarchy -output netlists/SYS_TOP_Netlist.ddc
+Writing verilog file '/mnt/hgfs/Joe's_Backend/syn/netlists/SYS_TOP_Netlist.ddc'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 4 nets to module SYS_CTRL using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 6 nets to module ALU_TOP_00000008 using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 13 nets to module System_top using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_file -format verilog -hierarchy -output netlists/SYS_TOP_Netlist.v
+Writing verilog file '/mnt/hgfs/Joe's_Backend/syn/netlists/SYS_TOP_Netlist.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 4 nets to module SYS_CTRL using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 6 nets to module ALU_TOP_00000008 using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 13 nets to module System_top using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_sdf  sdf/SYS_TOP.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/hgfs/Joe's_Backend/syn/sdf/SYS_TOP.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	u_UART/u_UART_RX_top/u_FSM/U25/AN u_UART/u_UART_RX_top/u_FSM/U25/Y u_UART/u_UART_RX_top/u_FSM/U3/C u_UART/u_UART_RX_top/u_FSM/U3/Y u_UART/u_UART_RX_top/u_FSM/U10/BN u_UART/u_UART_RX_top/u_FSM/U10/Y u_UART/u_UART_RX_top/u_data_sampler/U7/A u_UART/u_UART_RX_top/u_data_sampler/U7/Y u_UART/u_UART_RX_top/u_data_sampler/U5/A1N u_UART/u_UART_RX_top/u_data_sampler/U5/Y u_UART/u_UART_RX_top/u_STR_CHK/U2/A u_UART/u_UART_RX_top/u_STR_CHK/U2/Y 
+Warning: Disabling timing arc between pins 'AN' and 'Y' on cell 'u_UART/u_UART_RX_top/u_FSM/U25'
+         to break a timing loop. (OPT-314)
+1
+write_sdc  -nosplit sdc/SYS_TOP.sdc
+1
+set_svf -off
+1
+report_area -hierarchy > reports/area.rpt
+report_power  -verbose > reports/power.rpt
+report_timing -max_paths 10 -delay_type min > reports/hold.rpt
+report_timing -max_paths 10 -delay_type max > reports/setup.rpt
+report_clock -attributes > reports/clocks.rpt
+report_constraint -all_violators > reports/constraints.rpt
+##################### Num of FF in chain for DFT ###############
+set flops_per_chain 100
+100
+set num_flops [sizeof_collection [all_registers -edge_triggered]]
+268
+set num_chains [expr $num_flops / $flops_per_chain + 1 ]
+3
+3
+dc_shell> dc_shell> 
