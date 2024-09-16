@@ -1,0 +1,256 @@
+{E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/SYS_CTRL.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/SYS_CTRL.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SYS_CTRL
+
+Top level modules:
+	SYS_CTRL
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU_TOP
+
+Top level modules:
+	ALU_TOP
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/SYS_TOP_TB.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/SYS_TOP_TB.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SYS_TOP_TB
+
+Top level modules:
+	SYS_TOP_TB
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/deserializer.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/deserializer.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module deserializer
+
+Top level modules:
+	deserializer
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/BIT_SYNC.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/BIT_SYNC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module BIT_SYNC
+-- Compiling module BUS_SYNC
+
+Top level modules:
+	BUS_SYNC
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/CMP_UNIT.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/CMP_UNIT.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CMP_UNIT
+
+Top level modules:
+	CMP_UNIT
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_RX
+
+Top level modules:
+	UART_RX
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/data_sampler.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/data_sampler.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module data_sampler
+
+Top level modules:
+	data_sampler
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE.v} {2 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module REG_FILE
+** Warning: E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE.v(26): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	REG_FILE
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ARITHMETIC_UNIT
+
+Top level modules:
+	ARITHMETIC_UNIT
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FSM_1_SYS_CTRL
+
+Top level modules:
+	FSM_1_SYS_CTRL
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/DATA_SYNC.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/DATA_SYNC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DATA_SYNC
+
+Top level modules:
+	DATA_SYNC
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP_tb.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU_TOP_tb
+
+Top level modules:
+	ALU_TOP_tb
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/FSM_RX.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/FSM_RX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FSM_RX
+
+Top level modules:
+	FSM_RX
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_gate/CLK_GATE.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_gate/CLK_GATE.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CLK_GATE
+
+Top level modules:
+	CLK_GATE
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_TX
+
+Top level modules:
+	UART_TX
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE_tb.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module REG_FILE_tb
+
+Top level modules:
+	REG_FILE_tb
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SHIFT_UNIT
+
+Top level modules:
+	SHIFT_UNIT
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module LOGIC_UNIT
+
+Top level modules:
+	LOGIC_UNIT
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/Decoder_Unit.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/Decoder_Unit.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Decoder_Unit
+
+Top level modules:
+	Decoder_Unit
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module edge_bit_counter
+
+Top level modules:
+	edge_bit_counter
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX_tb.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_RX_tb
+
+Top level modules:
+	UART_RX_tb
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/System_top.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/System_top.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module System_top
+
+Top level modules:
+	System_top
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/FSM_TX.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/FSM_TX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FSM_TX
+
+Top level modules:
+	FSM_TX
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_div/ClkDiv.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_div/ClkDiv.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ClkDiv
+
+Top level modules:
+	ClkDiv
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/MUX4x1.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/MUX4x1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX4x1
+
+Top level modules:
+	MUX4x1
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STP_CHK.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STP_CHK.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module STP_CHK
+
+Top level modules:
+	STP_CHK
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/MUX.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/MUX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX
+
+Top level modules:
+	MUX
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/serializer.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/serializer.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module serializer
+
+Top level modules:
+	serializer
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/RST_SYNC.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/RST_SYNC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RST_SYNC
+
+Top level modules:
+	RST_SYNC
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TOP/UART.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TOP/UART.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART
+
+Top level modules:
+	UART
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STR_CHK.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STR_CHK.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module STR_CHK
+
+Top level modules:
+	STR_CHK
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX_tb.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_TX_tb
+
+Top level modules:
+	UART_TX_tb
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/Par_Calc.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/Par_Calc.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Par_Calc
+
+Top level modules:
+	Par_Calc
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FSM_2_SYS_CTRL
+
+Top level modules:
+	FSM_2_SYS_CTRL
+
+} {} {}} {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/PAR_CHK.v} {1 {vlog -work work {E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/PAR_CHK.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PAR_CHK
+
+Top level modules:
+	PAR_CHK
+
+} {} {}}
