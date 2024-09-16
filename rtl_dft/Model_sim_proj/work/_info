@@ -1,0 +1,741 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\EECE\Digital IC's Deploma\System\Joe's\Sys_final
+vALU_TOP
+Z1 !s100 0IIliAYmV6HiO9[dJbTQ40
+Z2 IQ86N@Y>@DQ3V_6OI`G68z0
+Z3 VM]4;MzA0;keE_I4?F?4OA0
+Z4 dE:\EECE\Digital IC's Deploma\System\Joe's_Backend\rtl\Model_sim_proj
+Z5 w1662101032
+Z6 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP.v
+Z7 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP.v|
+Z10 o-work work -O0
+Z11 n@a@l@u_@t@o@p
+Z12 !s108 1662152651.599000
+Z13 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU_TOP_tb
+Z14 !s100 XeTmKa;Wb52`Cj07Zg1[c3
+Z15 I]h7kRjV2MUCzSU8EnnzZj2
+Z16 Vk4U<?Ufn<@He?7b3BWjh90
+R4
+Z17 w1647975902
+Z18 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP_tb.v
+Z19 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP_tb.v
+L0 3
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP_tb.v|
+R10
+Z21 n@a@l@u_@t@o@p_tb
+Z22 !s108 1662152651.927000
+Z23 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ALU_TOP_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vARITHMETIC_UNIT
+Z24 !s100 [LDW0H7CIR?zAj;<bI90l1
+Z25 IDa[MmemF02FU_8>@6NMOz3
+Z26 VOUc:hckY?>Sdi@0HdhPCh3
+R4
+Z27 w1661500129
+Z28 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v
+Z29 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v
+L0 1
+R8
+r1
+31
+Z30 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v|
+R10
+Z31 n@a@r@i@t@h@m@e@t@i@c_@u@n@i@t
+Z32 !s108 1662152652.284000
+Z33 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/ARITHMETIC_UNIT.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vBIT_SYNC
+Z34 !s100 eMK2:BI`d>8>V5LeW?Rkd0
+Z35 I]b>1]GSQCT=2VI500MVR70
+Z36 VUG?5kF3;[[ZeO9OL8ec3=1
+R4
+Z37 w1658355147
+Z38 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/BIT_SYNC.v
+Z39 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/BIT_SYNC.v
+L0 1
+R8
+r1
+31
+Z40 !s108 1662152654.886000
+Z41 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/BIT_SYNC.v|
+Z42 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/BIT_SYNC.v|
+R10
+Z43 n@b@i@t_@s@y@n@c
+!i10b 1
+!s85 0
+!s101 -O0
+vBUS_SYNC
+Z44 !s100 4ZHP^UL;RezPM97]_EHGO3
+Z45 I[D7B0GI]Z4Sn5Y4F2[5M<0
+Z46 ViWdlMaJYZ>hbQN5^c^fYG3
+R4
+R37
+R38
+R39
+L0 24
+R8
+r1
+31
+R40
+R41
+R42
+R10
+Z47 n@b@u@s_@s@y@n@c
+!i10b 1
+!s85 0
+!s101 -O0
+vCLK_GATE
+!i10b 1
+!s100 MWXLfXo`C]SJi?dZCS>4d0
+Ij<Li=eDFJQJlS0aaGUb4[2
+Z48 V[T_=n^K=eP74_D993nR=c3
+R4
+w1662157500
+Z49 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_gate/CLK_GATE.v
+Z50 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_gate/CLK_GATE.v
+L0 6
+R8
+r1
+!s85 0
+31
+!s108 1662157505.000000
+!s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_gate/CLK_GATE.v|
+Z51 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_gate/CLK_GATE.v|
+!s101 -O0
+R10
+Z52 n@c@l@k_@g@a@t@e
+vClkDiv
+Z53 !s100 1XA2n>WGZA_T?bjM6j94b0
+Z54 Iz@GdK69V<jVAoA6M67MOI3
+Z55 V0>]<_IDniLGDnFM<:<`ld0
+R4
+Z56 w1661512940
+Z57 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_div/ClkDiv.v
+Z58 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_div/ClkDiv.v
+L0 2
+R8
+r1
+31
+Z59 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_div/ClkDiv.v|
+R10
+Z60 n@clk@div
+Z61 !s108 1662152653.652000
+Z62 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/CLK_div/ClkDiv.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCMP_UNIT
+Z63 !s100 UF?_Cd48RH3g3MgO]LTGO1
+Z64 I8babAEnMY_@1hRKB:^o@V0
+Z65 Vz`m?]Nk]U?3H_>ToPohmf0
+R4
+Z66 w1661498289
+Z67 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/CMP_UNIT.v
+Z68 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/CMP_UNIT.v
+L0 2
+R8
+r1
+31
+Z69 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/CMP_UNIT.v|
+R10
+Z70 n@c@m@p_@u@n@i@t
+Z71 !s108 1662152652.661000
+Z72 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/CMP_UNIT.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdata_sampler
+Z73 !s100 i@AIV:o<`CL7M@NMcH7lF0
+Z74 I@?U`4KiLzJTNW^>V`z@We0
+Z75 VUAzd23BOj;EbGzPhmD?dY0
+R4
+Z76 w1661624703
+Z77 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/data_sampler.v
+Z78 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/data_sampler.v
+L0 1
+R8
+r1
+31
+Z79 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/data_sampler.v|
+R10
+Z80 !s108 1662152657.139000
+Z81 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/data_sampler.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDATA_SYNC
+Z82 !s100 XcMUijQgSTiU5COj=iV0l1
+Z83 IU1a4KNKnk3;o[lDFV`M7O2
+Z84 VWTDeGIzT^[5^Z=nH[?]FS2
+R4
+Z85 w1658350987
+Z86 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/DATA_SYNC.v
+Z87 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/DATA_SYNC.v
+L0 1
+R8
+r1
+31
+Z88 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/DATA_SYNC.v|
+R10
+Z89 n@d@a@t@a_@s@y@n@c
+Z90 !s108 1662152655.200000
+Z91 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/DATA_SYNC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDecoder_Unit
+Z92 !s100 :l2ga3mZZn:=CiESBdL?I1
+Z93 IjBB3e0L5L4bZ[:1=00OR;3
+Z94 VT^6;@Hdz0hQGMK6bSm@@:2
+R4
+Z95 w1646672367
+Z96 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/Decoder_Unit.v
+Z97 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/Decoder_Unit.v
+L0 1
+R8
+r1
+31
+Z98 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/Decoder_Unit.v|
+R10
+Z99 n@decoder_@unit
+Z100 !s108 1662152652.895000
+Z101 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/Decoder_Unit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdeserializer
+Z102 !s100 cli:TK^ha2V;B5;0Slfe:2
+Z103 Ih<DW@b65HDkF9f1MFR;nf2
+Z104 VWGd@[koed;YSejhIYdeIk3
+R4
+Z105 w1661604442
+Z106 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/deserializer.v
+Z107 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/deserializer.v
+L0 2
+R8
+r1
+31
+Z108 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/deserializer.v|
+R10
+Z109 !s108 1662152657.313000
+Z110 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/deserializer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_bit_counter
+Z111 !s100 BLmao7:k`OOU@b4]iIQM>2
+Z112 I3]`H8mHdojPdX3l2cDW;]3
+Z113 V5TJjWo07ibP3TIH;=RjiQ1
+R4
+Z114 w1661604919
+Z115 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v
+Z116 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v
+L0 1
+R8
+r1
+31
+Z117 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v|
+R10
+Z118 !s108 1662152657.543000
+Z119 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/edge_bit_counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFSM_1_SYS_CTRL
+Z120 I9oNb8z;;Mg5hXk5U3EEO81
+Z121 VJVdg`F6IzLF<2<0A8[lLm0
+R4
+Z122 w1662153071
+Z123 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v
+Z124 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v
+L0 1
+R8
+r1
+31
+Z125 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v|
+R10
+Z126 n@f@s@m_1_@s@y@s_@c@t@r@l
+Z127 !s100 ISF_zl9gkh]nagKVZTPQ31
+Z128 !s108 1662153080.036000
+Z129 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_1_SYS_CTRL.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFSM_2_SYS_CTRL
+Z130 !s100 ^i7V<DG?;neV0CI6:3Ck<1
+Z131 IlQlW[gGYDF_ah5fP:0R8G0
+Z132 Vf=c1niz8Oe7>lF@BC0@E]2
+R4
+Z133 w1662152552
+Z134 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v
+Z135 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v
+L0 1
+R8
+r1
+31
+Z136 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v|
+R10
+Z137 n@f@s@m_2_@s@y@s_@c@t@r@l
+Z138 !s108 1662152656.441000
+Z139 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/FSM_2_SYS_CTRL.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFSM_RX
+Z140 !s100 HaJC3[_BoJLSWb]Wfaa2b0
+Z141 I;20TlemNIJc_YPin;kNbZ1
+Z142 VXh=SRSA=]No50=LnDeJaX1
+R4
+Z143 w1661897980
+Z144 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/FSM_RX.v
+Z145 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/FSM_RX.v
+L0 1
+R8
+r1
+31
+Z146 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/FSM_RX.v|
+R10
+Z147 n@f@s@m_@r@x
+Z148 !s108 1662152657.803000
+Z149 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/FSM_RX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFSM_TX
+Z150 !s100 bcf=;:1oSc5Vl1AJ[;Wie0
+Z151 I?<Z@CSDke12P4QMoUNg2c1
+Z152 ViQR][iRzdo21:4h>@K0iQ0
+R4
+Z153 w1661609541
+Z154 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/FSM_TX.v
+Z155 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/FSM_TX.v
+L0 1
+R8
+r1
+31
+Z156 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/FSM_TX.v|
+R10
+Z157 n@f@s@m_@t@x
+Z158 !s108 1662152659.253000
+Z159 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/FSM_TX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vLOGIC_UNIT
+Z160 !s100 1F>cRmB1T?YYO>?if>c4]1
+Z161 IR;A57R]amo]?k_6gT54oV0
+Z162 Vl;0@JIITK3aYIRfX1RVf`0
+R4
+Z163 w1661498278
+Z164 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v
+Z165 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v
+L0 1
+R8
+r1
+31
+Z166 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v|
+R10
+Z167 n@l@o@g@i@c_@u@n@i@t
+Z168 !s108 1662152653.075000
+Z169 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/LOGIC_UNIT.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMUX
+Z170 !s100 5FVZEW;e85XmaQGlE4DGf3
+Z171 IR@G5Y:3OGGFH8XIKkWN`51
+Z172 V5lVM3hjOFK7[3[9I`n]o61
+R4
+Z173 w1657820991
+Z174 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/MUX.v
+Z175 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/MUX.v
+L0 1
+R8
+r1
+31
+Z176 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/MUX.v|
+R10
+Z177 n@m@u@x
+Z178 !s108 1662152659.478000
+Z179 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/MUX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMUX4x1
+Z180 !s100 OR:mNC1`d@9^`_nFL7<cM0
+Z181 Idkh;A8K8]maj`cPiT0<JI3
+Z182 VJKljIaU4H=cN5a2znjVLJ1
+R4
+Z183 w1661519086
+Z184 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/MUX4x1.v
+Z185 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/MUX4x1.v
+L0 1
+R8
+r1
+31
+Z186 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/MUX4x1.v|
+R10
+Z187 n@m@u@x4x1
+Z188 !s108 1662152653.240000
+Z189 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/MUX4x1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPar_Calc
+Z190 !s100 b36b;Xa5cnVImaMZ<k4@@3
+Z191 I:?1NUj0BmUadnPZM7c`=n1
+Z192 V2EbXF`RhISSG[OTMH?0?j1
+R4
+Z193 w1661591785
+Z194 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/Par_Calc.v
+Z195 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/Par_Calc.v
+L0 1
+R8
+r1
+31
+Z196 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/Par_Calc.v|
+R10
+Z197 n@par_@calc
+Z198 !s108 1662152659.667000
+Z199 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/Par_Calc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPAR_CHK
+Z200 !s100 XIDYz`LEZ=^>ZXXK;WS<>1
+Z201 I3RVmJe8W67P4RKbZNiJJ42
+Z202 V@EfMRzi74@OIccSZi_;3b0
+R4
+Z203 w1661608542
+Z204 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/PAR_CHK.v
+Z205 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/PAR_CHK.v
+L0 1
+R8
+r1
+31
+Z206 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/PAR_CHK.v|
+R10
+Z207 n@p@a@r_@c@h@k
+Z208 !s108 1662152657.943000
+Z209 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/PAR_CHK.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vREG_FILE
+Z210 !s100 HJ:=CQ8>YX=Z9[9kN?_<W1
+Z211 IT1c9d2RmO=]>O^XZd2Fdj1
+Z212 V:RU4BIl=f<ZA]U^BdMaBg0
+R4
+Z213 w1661895270
+Z214 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE.v
+Z215 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE.v
+L0 1
+R8
+r1
+31
+Z216 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE.v|
+R10
+Z217 n@r@e@g_@f@i@l@e
+Z218 !s108 1662152654.159000
+Z219 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vREG_FILE_tb
+Z220 !s100 z6T1_P=PW7i[QDGlIzPVb3
+Z221 I87zIRSL3J]n^J?om4HVQ<3
+Z222 V`:bXZ<VnkXUA=eV<Vgm?R0
+R4
+Z223 w1647209426
+Z224 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE_tb.v
+Z225 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE_tb.v
+L0 3
+R8
+r1
+31
+Z226 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE_tb.v|
+R10
+Z227 n@r@e@g_@f@i@l@e_tb
+Z228 !s108 1662152654.487000
+Z229 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/REG_FILE/REG_FILE_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRST_SYNC
+Z230 !s100 :3IV6[LN41J3IWanIc>Sm2
+Z231 Ih7?k<ECT2dj@egGC;d^Lg3
+Z232 VWF`nJ6:Rk`1U3;O`F`igm1
+R4
+Z233 w1658436364
+Z234 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/RST_SYNC.v
+Z235 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/RST_SYNC.v
+L0 1
+R8
+r1
+31
+Z236 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/RST_SYNC.v|
+R10
+Z237 n@r@s@t_@s@y@n@c
+Z238 !s108 1662152655.547000
+Z239 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sync/RST_SYNC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vserializer
+Z240 !s100 SUIIf0V2ACIjCZDjFA15a3
+Z241 ID:bEmOT]:PY^8e=[fLGOX3
+Z242 V17<]64KAULY1o7hzUZ2Y60
+R4
+Z243 w1661626615
+Z244 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/serializer.v
+Z245 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/serializer.v
+L0 1
+R8
+r1
+31
+Z246 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/serializer.v|
+R10
+Z247 !s108 1662152659.869000
+Z248 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/serializer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSHIFT_UNIT
+Z249 !s100 B`Y8DYk>LB:AfZc2l<nS60
+Z250 Ifd1McYXJ=bK5ISMh@jAiP1
+Z251 V?3XN=leG?VkQ=Tgz[l6C23
+R4
+Z252 w1661498293
+Z253 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v
+Z254 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v
+L0 1
+R8
+r1
+31
+Z255 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v|
+R10
+Z256 n@s@h@i@f@t_@u@n@i@t
+Z257 !s108 1662152653.423000
+Z258 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/ALU/SHIFT_UNIT.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSTP_CHK
+Z259 !s100 aVPkoRMCECLc;S9?Z5KB50
+Z260 IA:5cm7C?Bc]3VH<1UHa>E3
+Z261 VN9bFffZS3VSlgbgzC5`2X0
+R4
+Z262 w1661612240
+Z263 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STP_CHK.v
+Z264 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STP_CHK.v
+L0 1
+R8
+r1
+31
+Z265 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STP_CHK.v|
+R10
+Z266 n@s@t@p_@c@h@k
+Z267 !s108 1662152658.193000
+Z268 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STP_CHK.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSTR_CHK
+Z269 !s100 ?AZ;SL>EWfdD`M?fXBWhf0
+Z270 I=BcCUU_P0D4fGjT]ooQRo1
+Z271 V2^M0;NWf[O`IGf8O6GAYJ2
+R4
+Z272 w1661612093
+Z273 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STR_CHK.v
+Z274 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STR_CHK.v
+L0 1
+R8
+r1
+31
+Z275 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STR_CHK.v|
+R10
+Z276 n@s@t@r_@c@h@k
+Z277 !s108 1662152658.441000
+Z278 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/STR_CHK.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSYS_CTRL
+Z279 !s100 mki?zfFhz_mHIZEbfY_jY3
+Z280 I4B6AK[:]W3d<T7_g6e;<J2
+Z281 V_Q7cE_Sk0LN7704KSk_aa1
+R4
+Z282 w1661526186
+Z283 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/SYS_CTRL.v
+Z284 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/SYS_CTRL.v
+L0 1
+R8
+r1
+31
+Z285 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/SYS_CTRL.v|
+R10
+Z286 n@s@y@s_@c@t@r@l
+Z287 !s108 1662152656.652000
+Z288 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/SYS_CTRL/SYS_CTRL.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSYS_TOP_TB
+Z289 !s100 OLh85KgK2FDk@UhLe9iT=0
+Z290 I?MQTQ`fEo4VJBP=e<B@^I2
+Z291 Vz0fU@S18^ZJSA6S9OVJaM3
+R4
+Z292 w1662129740
+Z293 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/SYS_TOP_TB.v
+Z294 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/SYS_TOP_TB.v
+L0 4
+R8
+r1
+31
+Z295 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/SYS_TOP_TB.v|
+R10
+Z296 n@s@y@s_@t@o@p_@t@b
+Z297 !s108 1662152656.816000
+Z298 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/SYS_TOP_TB.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSystem_top
+Z299 !s100 mk;0TKPfQ3UJVS@CM`PW33
+Z300 IbFJD_Vz;nQW:n<Cj_`DL_0
+Z301 Vg:`HLb5OT@`@zl]<cjWkE0
+R4
+Z302 w1662106048
+Z303 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/System_top.v
+Z304 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/System_top.v
+L0 1
+R8
+r1
+31
+Z305 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/System_top.v|
+R10
+Z306 n@system_top
+Z307 !s108 1662152656.969000
+Z308 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/Sys_top/System_top.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART
+Z309 !s100 7[:9Ze5D;KP0CBeH^[9DC3
+Z310 IP9_X^K5ZeL`k5fd3A7QFU2
+Z311 V=i1DK77XN_Gg3nCAZaRS52
+R4
+Z312 w1661622751
+Z313 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TOP/UART.v
+Z314 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TOP/UART.v
+L0 2
+R8
+r1
+31
+Z315 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TOP/UART.v|
+R10
+Z316 n@u@a@r@t
+Z317 !s108 1662152659.049000
+Z318 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TOP/UART.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART_RX
+Z319 !s100 LTb4`?Ve1EIfe^KNebIQd1
+Z320 I4H7@Y>UG;5B@@TLcnlHRU3
+Z321 VWVi[OX2<azknWYnPji;@;0
+R4
+Z322 w1661623348
+Z323 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX.v
+Z324 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX.v
+L0 1
+R8
+r1
+31
+Z325 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX.v|
+R10
+Z326 n@u@a@r@t_@r@x
+Z327 !s108 1662152658.641000
+Z328 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART_RX_tb
+Z329 !s100 [nF7D<X7?]i7ZRT2`5RjF1
+Z330 ISNhKUWo[64L[1P1@[AVVH1
+Z331 VKll0nH0G^nCL5lC=B:W4Z1
+R4
+Z332 w1661611955
+Z333 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX_tb.v
+Z334 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX_tb.v
+L0 2
+R8
+r1
+31
+Z335 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX_tb.v|
+R10
+Z336 n@u@a@r@t_@r@x_tb
+Z337 !s108 1662152658.810000
+Z338 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_RX/UART_RX_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART_TX
+Z339 !s100 B02BA5E1e:PhdEaRCbQUa1
+Z340 IHHE_L@@IEina59lS@>dh43
+Z341 VHHYG<4_EPMz]mTb?kk[HH1
+R4
+Z342 w1661608402
+Z343 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX.v
+Z344 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX.v
+L0 1
+R8
+r1
+31
+Z345 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX.v|
+R10
+Z346 n@u@a@r@t_@t@x
+Z347 !s108 1662152660.051000
+Z348 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART_TX_tb
+Z349 !s100 <5UWLBemaDfJ?[HKhFcRo3
+Z350 IzD9?_63ffMd[0B<P@eM@b0
+Z351 V<KLUFakMbz>aXSLLj8DMR2
+R4
+Z352 w1661610074
+Z353 8E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX_tb.v
+Z354 FE:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX_tb.v
+L0 2
+R8
+r1
+31
+Z355 !s90 -reportprogress|300|-work|work|E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX_tb.v|
+R10
+Z356 n@u@a@r@t_@t@x_tb
+Z357 !s108 1662152660.211000
+Z358 !s107 E:/EECE/Digital IC's Deploma/System/Joe's_Backend/rtl/UART_TX/UART_TX_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
