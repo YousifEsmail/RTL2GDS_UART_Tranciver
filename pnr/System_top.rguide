@@ -1,0 +1,6 @@
+routeGuideNet UART_CLK__L2_N0
+wire 10.045 81.795 10.045 76.055 V 0.5
+wire 9.635 72.365 10.045 72.365 H 0.5
+wire 10.045 72.365 10.045 76.055 V 0.5
+wire 10.045 76.055 10.455 76.055 H 0.5
+endRouteGuideNet

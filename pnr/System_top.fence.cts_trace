@@ -1,0 +1,104 @@
+
+
+
+
+
+Tracing Clock UART_CLK
+
+****** Clock Tree (UART_CLK) Structure
+Nr. Subtrees                   : 5
+Nr. Sinks                      : 2
+Nr.          Rising  Sync Pins : 2
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+Nr. Unsync Pins                : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+SDFFRQX1M (CK)                          1
+SDFFRQX2M (CK)                          1
+-----------------------------------------------
+
+
+
+
+** Unsync Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+CLKINVX40M (A)                          2
+CLKINVX32M (A)                          2
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (UART_CLK) Cell: (EMPTY) Net: (UART_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+          DontTouch with Nr. of FreeNets: 0
+*DEPTH 1 Input_Pin: (UART_CLK__L1_I1/A) Output_Pin: (UART_CLK__L1_I1/Y) Cell: (CLKINVX40M) Net: (UART_CLK__L1_N1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+          DontTouch with Nr. of FreeNets: 0
+*DEPTH 2 Input_Pin: (UART_CLK__L2_I1/A) Output_Pin: (UART_CLK__L2_I1/Y) Cell: (CLKINVX32M) Net: (UART_CLK__L2_N1) INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+          DontTouch with Nr. of FreeNets: 0
+*DEPTH 3 Input_Pin: (UART_CLK__L1_I0/A) Output_Pin: (UART_CLK__L1_I0/Y) Cell: (CLKINVX40M) Net: (UART_CLK__L1_N0) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+          DontTouch with Nr. of FreeNets: 0
+*DEPTH 4 Input_Pin: (UART_CLK__L2_I0/A) Output_Pin: (UART_CLK__L2_I0/Y) Cell: (CLKINVX32M) Net: (UART_CLK__L2_N0) INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 2
+          Nr. of     Rising  Sync Pins  : 2
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+          DontTouch with Nr. of FreeNets: 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock UART_CLK
+*DEPTH 0: UART_CLK
+ *DEPTH 1: UART_CLK__L1_I1(A->Y)
+  *DEPTH 2: UART_CLK__L2_I1(A->Y)
+   *DEPTH 3: UART_CLK__L1_I0(A->Y)
+    *DEPTH 4: UART_CLK__L2_I0(A->Y)
+     (Sync)u_RST_2_SYNC/MULT_FLOP_SYNC_reg[0]/CK
+     (Sync)u_RST_2_SYNC/SYNC_RST_reg/CK

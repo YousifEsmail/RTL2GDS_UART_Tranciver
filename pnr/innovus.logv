@@ -1,0 +1,431 @@
+[09/04 02:56:29     0s] 
+[09/04 02:56:29     0s] Cadence Innovus(TM) Implementation System.
+[09/04 02:56:29     0s] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/04 02:56:29     0s] 
+[09/04 02:56:29     0s] Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+[09/04 02:56:29     0s] Options:	
+[09/04 02:56:29     0s] Date:		Sun Sep  4 02:56:29 2022
+[09/04 02:56:29     0s] Host:		IC (x86_64 w/Linux 2.6.32-573.el6.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz 8192KB)
+[09/04 02:56:29     0s] OS:		Red Hat Enterprise Linux Server release 6.7 (Santiago)
+[09/04 02:56:29     0s] 
+[09/04 02:56:29     0s] License:
+[09/04 02:56:29     0s] 		invs	Innovus Implementation System	15.2	Denied
+[09/04 02:56:29     0s] 		invsb	Innovus Implementation System Basic	15.2	Denied
+[09/04 02:56:29     0s] 		fexl	First Encounter XL	15.2	checkout succeeded
+[09/04 02:56:29     0s] 		2 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/04 02:56:45     8s] @(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+[09/04 02:56:45     8s] @(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+[09/04 02:56:45     8s] @(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+[09/04 02:56:45     8s] @(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+[09/04 02:56:45     8s] @(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+[09/04 02:56:45     8s] @(#)CDS: CPE v15.20-p002
+[09/04 02:56:45     8s] @(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+[09/04 02:56:45     8s] @(#)CDS: OA 22.50-p028 Thu Jul 23 14:59:57 2015
+[09/04 02:56:45     8s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[09/04 02:56:45     8s] @(#)CDS: RCDB 11.6
+[09/04 02:56:45     8s] --- Running on IC (x86_64 w/Linux 2.6.32-573.el6.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz 8192KB) ---
+[09/04 02:56:46     8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_68519_IC_IC_5WOYsh.
+
+[09/04 02:56:48     9s] 
+[09/04 02:56:48     9s] **INFO:  MMMC transition support version v31-84 
+[09/04 02:56:48     9s] 
+[09/04 02:56:48     9s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[09/04 02:56:48     9s] <CMD> suppressMessage ENCEXT-2799
+[09/04 02:56:49    10s] <CMD> getDrawView
+[09/04 02:56:49    10s] <CMD> loadWorkspace -name Physical
+[09/04 02:56:49    10s] <CMD> win
+[09/04 03:05:40   140s] <CMD> set init_gnd_net VSS
+[09/04 03:05:40   140s] <CMD> set init_lef_file {../std_cells/lef/tsmc13fsg_6lm_tech.lef ../std_cells/lef/tsmc13_m_macros.lef SYS_TOP.lef}
+[09/04 03:05:40   140s] <CMD> set init_verilog ../dft/netlists/System_DFT_Netlist.v
+[09/04 03:05:40   140s] <CMD> set init_mmmc_file MMC.tcl
+[09/04 03:05:40   140s] <CMD> set init_top_cell System_top
+[09/04 03:05:40   140s] <CMD> set init_pwr_net VDD
+[09/04 03:05:40   140s] <CMD> init_design
+[09/04 03:05:40   140s] **ERROR: (TCLCMD-995):	Can not open file '../std_cells/libs/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib' for library set
+[09/04 03:05:43   141s] <CMD> set init_gnd_net VSS
+[09/04 03:05:43   141s] <CMD> set init_lef_file {../std_cells/lef/tsmc13fsg_6lm_tech.lef ../std_cells/lef/tsmc13_m_macros.lef SYS_TOP.lef}
+[09/04 03:05:43   141s] <CMD> set init_verilog ../dft/netlists/System_DFT_Netlist.v
+[09/04 03:05:43   141s] <CMD> set init_mmmc_file MMC.tcl
+[09/04 03:05:43   141s] <CMD> set init_top_cell System_top
+[09/04 03:05:43   141s] <CMD> set init_pwr_net VDD
+[09/04 03:05:43   141s] <CMD> init_design
+[09/04 03:05:43   141s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/04 03:05:43   141s] **ERROR: (TCLCMD-995):	Can not open file '../std_cells/libs/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib' for library set
+[09/04 03:05:57   143s] <CMD> set init_gnd_net VSS
+[09/04 03:05:57   143s] <CMD> set init_lef_file {../std_cells/lef/tsmc13fsg_6lm_tech.lef ../std_cells/lef/tsmc13_m_macros.lef SYS_TOP.lef}
+[09/04 03:05:57   143s] <CMD> set init_verilog ../dft/netlists/System_DFT_Netlist.v
+[09/04 03:05:57   143s] <CMD> set init_mmmc_file MMC.tcl
+[09/04 03:05:57   143s] <CMD> set init_top_cell System_top
+[09/04 03:05:57   143s] <CMD> set init_pwr_net VDD
+[09/04 03:05:57   143s] <CMD> init_design
+[09/04 03:05:57   143s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/04 03:05:57   143s] **ERROR: (TCLCMD-995):	Can not open file '../std_cells/libs/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib' for library set
+[09/04 03:07:23   158s] <CMD> set init_gnd_net VSS
+[09/04 03:07:23   158s] <CMD> set init_lef_file {../std_cells/lef/tsmc13fsg_6lm_tech.lef ../std_cells/lef/tsmc13_m_macros.lef SYS_TOP.lef}
+[09/04 03:07:23   158s] <CMD> set init_verilog ../dft/netlists/System_DFT_Netlist.v
+[09/04 03:07:23   158s] <CMD> set init_mmmc_file MMC.tcl
+[09/04 03:07:23   158s] <CMD> set init_top_cell System_top
+[09/04 03:07:23   158s] <CMD> set init_pwr_net VDD
+[09/04 03:07:23   158s] <CMD> init_design
+[09/04 03:07:23   158s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/04 03:07:23   158s] 
+[09/04 03:07:23   158s] Loading LEF file ../std_cells/lef/tsmc13fsg_6lm_tech.lef ...
+[09/04 03:07:24   158s] 
+[09/04 03:07:24   158s] Loading LEF file ../std_cells/lef/tsmc13_m_macros.lef ...
+[09/04 03:07:24   158s] Set DBUPerIGU to M2 pitch 820.
+[09/04 03:07:24   158s] 
+[09/04 03:07:24   158s] Loading LEF file SYS_TOP.lef ...
+[09/04 03:07:24   158s] **WARN: (IMPLF-246):	The 'UNITS' attribute is only allowed to be set in the first LEF file (technology LEF). The attribute was found in this LEF file, and will be ignored.
+[09/04 03:07:24   158s] **ERROR: (IMPLF-40):	Macro 'SYS_TOP' references a site 'CoreSite' that has not been defined. The sites must be defined before they can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the site does not exist or is specified after the one that defines the macro.
+[09/04 03:07:24   158s] Type 'man IMPLF-40' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-46):	Class CORE macro 'SYS_TOP' has no SITE statement defined.
+[09/04 03:07:24   158s] Class CORE macros require a SITE statement. The SITE ENC_CORE_0 was
+[09/04 03:07:24   158s] created and will be used for this macro, using height 240.6000 that
+[09/04 03:07:24   158s] matches the macro SIZE height, and width 0.4100 that matches the
+[09/04 03:07:24   158s] m2 routing pitch. Define the site explicitly in the LEF file, to
+[09/04 03:07:24   158s] this message in the future.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'SI[0]' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'SI[1]' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'SI[2]' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'SE' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'test_mode' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'scan_clk' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'scan_rst' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'RST' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'UART_CLK' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'REF_CLK' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'RX_IN' in macro 'SYS_TOP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-201):	Pin 'SO[0]' in macro 'SYS_TOP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-201' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-201):	Pin 'SO[1]' in macro 'SYS_TOP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-201' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-201):	Pin 'SO[2]' in macro 'SYS_TOP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-201' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-201):	Pin 'TX_OUT' in macro 'SYS_TOP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-201' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'B' in macro 'MXI2DXLM' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'A' in macro 'MXI2DXLM' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'B' in macro 'MXI2DX8M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'A' in macro 'MXI2DX8M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'B' in macro 'MXI2DX4M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'A' in macro 'MXI2DX4M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'B' in macro 'MXI2DX2M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'A' in macro 'MXI2DX2M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPLF-200):	Pin 'B' in macro 'MXI2DX1M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-200' for more detail.
+[09/04 03:07:24   158s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[09/04 03:07:24   158s] To increase the message display limit, refer to the product command reference manual.
+[09/04 03:07:24   158s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'HOLDX1M' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/04 03:07:24   158s] Type 'man IMPLF-201' for more detail.
+[09/04 03:07:24   158s] 
+[09/04 03:07:24   158s] viaInitial starts at Sun Sep  4 03:07:24 2022
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM1 GENERATE.
+[09/04 03:07:24   158s] Type 'man IMPPP-557' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM2 GENERATE.
+[09/04 03:07:24   158s] Type 'man IMPPP-557' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM3 GENERATE.
+[09/04 03:07:24   158s] Type 'man IMPPP-557' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM4 GENERATE.
+[09/04 03:07:24   158s] Type 'man IMPPP-557' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM5 GENERATE.
+[09/04 03:07:24   158s] Type 'man IMPPP-557' for more detail.
+[09/04 03:07:24   158s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM6 GENERATE.
+[09/04 03:07:24   158s] Type 'man IMPPP-557' for more detail.
+[09/04 03:07:24   158s] viaInitial ends at Sun Sep  4 03:07:24 2022
+Loading view definition file from MMC.tcl
+[09/04 03:07:24   158s] Reading max_library timing library '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.lib' ...
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX8M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX8M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXLM' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXLM' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX8M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX8M' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXLM' is not defined in the library.
+[09/04 03:07:26   161s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXLM' is not defined in the library.
+[09/04 03:07:26   161s] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[09/04 03:07:29   164s] **WARN: (TECHLIB-302):	No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+[09/04 03:07:29   164s] Read 618 cells in library 'scmetro_tsmc_cl013g_rvt_ss_1p08v_125c' 
+[09/04 03:07:29   164s] Reading min_library timing library '/mnt/hgfs/Joe's_Backend/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib' ...
+[09/04 03:07:31   167s] **WARN: (TECHLIB-302):	No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+[09/04 03:07:31   167s] Read 618 cells in library 'scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c' 
+[09/04 03:07:31   167s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=2.78min, fe_real=11.03min, fe_mem=556.1M) ***
+[09/04 03:07:31   167s] *** Begin netlist parsing (mem=556.1M) ***
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XLM' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XLM' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X8M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X8M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X4M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X4M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X2M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X2M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XLM' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XLM' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X8M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X8M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X3M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X3M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2M' is defined in LEF but not in the timing library.
+[09/04 03:07:31   167s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[09/04 03:07:31   167s] To increase the message display limit, refer to the product command reference manual.
+[09/04 03:07:31   167s] Created 618 new cells from 2 timing libraries.
+[09/04 03:07:31   167s] Reading netlist ...
+[09/04 03:07:31   167s] Backslashed names will retain backslash and a trailing blank character.
+[09/04 03:07:31   167s] Reading verilog netlist '../dft/netlists/System_DFT_Netlist.v'
+[09/04 03:07:31   167s] 
+[09/04 03:07:31   167s] *** Memory Usage v#1 (Current mem = 556.070M, initial mem = 164.598M) ***
+[09/04 03:07:31   167s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=556.1M) ***
+[09/04 03:07:31   167s] Set top cell to System_top.
+[09/04 03:07:32   167s] Hooked 1236 DB cells to tlib cells.
+[09/04 03:07:32   167s] Starting recursive module instantiation check.
+[09/04 03:07:32   167s] No recursion found.
+[09/04 03:07:32   167s] Building hierarchical netlist for Cell System_top ...
+[09/04 03:07:32   167s] *** Netlist is unique.
+[09/04 03:07:32   167s] ** info: there are 1295 modules.
+[09/04 03:07:32   167s] ** info: there are 1556 stdCell insts.
+[09/04 03:07:32   167s] 
+[09/04 03:07:32   167s] *** Memory Usage v#1 (Current mem = 596.395M, initial mem = 164.598M) ***
+[09/04 03:07:32   167s] **WARN: (IMPFP-3961):	The techSite 'ENC_CORE_0' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[09/04 03:07:32   167s] Type 'man IMPFP-3961' for more detail.
+[09/04 03:07:32   167s] Set Default Net Delay as 1000 ps.
+[09/04 03:07:32   167s] Set Default Net Load as 0.5 pF. 
+[09/04 03:07:32   167s] Set Default Input Pin Transition as 0.1 ps.
+[09/04 03:07:34   169s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[09/04 03:07:34   169s] Type 'man IMPEXT-2773' for more detail.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/04 03:07:34   169s] Type 'man IMPEXT-2776' for more detail.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/04 03:07:34   169s] Type 'man IMPEXT-2776' for more detail.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/04 03:07:34   169s] Type 'man IMPEXT-2776' for more detail.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/04 03:07:34   169s] Type 'man IMPEXT-2776' for more detail.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 0.63 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/04 03:07:34   169s] Type 'man IMPEXT-2776' for more detail.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.117 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/04 03:07:34   169s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.027 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/04 03:07:34   169s] Summary of Active RC-Corners : 
+[09/04 03:07:34   169s]  
+[09/04 03:07:34   169s]  Analysis View: setup_func_analysis_view
+[09/04 03:07:34   169s]     RC-Corner Name        : RCcorner
+[09/04 03:07:34   169s]     RC-Corner Index       : 0
+[09/04 03:07:34   169s]     RC-Corner Temperature : 25 Celsius
+[09/04 03:07:34   169s]     RC-Corner Cap Table   : ''
+[09/04 03:07:34   169s]     RC-Corner PreRoute Res Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PreRoute Cap Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/04 03:07:34   169s]  
+[09/04 03:07:34   169s]  Analysis View: setup_cap_analysis_view
+[09/04 03:07:34   169s]     RC-Corner Name        : RCcorner
+[09/04 03:07:34   169s]     RC-Corner Index       : 0
+[09/04 03:07:34   169s]     RC-Corner Temperature : 25 Celsius
+[09/04 03:07:34   169s]     RC-Corner Cap Table   : ''
+[09/04 03:07:34   169s]     RC-Corner PreRoute Res Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PreRoute Cap Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/04 03:07:34   169s]  
+[09/04 03:07:34   169s]  Analysis View: setup_scan_analysis_view
+[09/04 03:07:34   169s]     RC-Corner Name        : RCcorner
+[09/04 03:07:34   169s]     RC-Corner Index       : 0
+[09/04 03:07:34   169s]     RC-Corner Temperature : 25 Celsius
+[09/04 03:07:34   169s]     RC-Corner Cap Table   : ''
+[09/04 03:07:34   169s]     RC-Corner PreRoute Res Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PreRoute Cap Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/04 03:07:34   169s]  
+[09/04 03:07:34   169s]  Analysis View: hold_func_analysis_view
+[09/04 03:07:34   169s]     RC-Corner Name        : RCcorner
+[09/04 03:07:34   169s]     RC-Corner Index       : 0
+[09/04 03:07:34   169s]     RC-Corner Temperature : 25 Celsius
+[09/04 03:07:34   169s]     RC-Corner Cap Table   : ''
+[09/04 03:07:34   169s]     RC-Corner PreRoute Res Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PreRoute Cap Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/04 03:07:34   169s]  
+[09/04 03:07:34   169s]  Analysis View: hold_cap_analysis_view
+[09/04 03:07:34   169s]     RC-Corner Name        : RCcorner
+[09/04 03:07:34   169s]     RC-Corner Index       : 0
+[09/04 03:07:34   169s]     RC-Corner Temperature : 25 Celsius
+[09/04 03:07:34   169s]     RC-Corner Cap Table   : ''
+[09/04 03:07:34   169s]     RC-Corner PreRoute Res Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PreRoute Cap Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/04 03:07:34   169s]  
+[09/04 03:07:34   169s]  Analysis View: hold_scan_analysis_view
+[09/04 03:07:34   169s]     RC-Corner Name        : RCcorner
+[09/04 03:07:34   169s]     RC-Corner Index       : 0
+[09/04 03:07:34   169s]     RC-Corner Temperature : 25 Celsius
+[09/04 03:07:34   169s]     RC-Corner Cap Table   : ''
+[09/04 03:07:34   169s]     RC-Corner PreRoute Res Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PreRoute Cap Factor         : 1
+[09/04 03:07:34   169s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/04 03:07:34   169s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/04 03:07:34   169s] *Info: initialize multi-corner CTS.
+[09/04 03:07:34   169s] Reading timing constraints file '../dft/sdc/System_DFT_capture.sdc' ...
+[09/04 03:07:34   169s] Current (total cpu=0:02:49, real=0:11:05, peak res=313.6M, current mem=711.7M)
+[09/04 03:07:34   170s] **WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../dft/sdc/System_DFT_capture.sdc, Line 9).
+[09/04 03:07:34   170s] 
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_cap_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_cap_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_cap_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_cap_analysis_view.
+[09/04 03:07:35   170s] Number of path exceptions in the constraint file = 2
+[09/04 03:07:35   170s] Number of paths exceptions after getting compressed = 2
+[09/04 03:07:35   170s] INFO (CTE): Reading of timing constraints file ../dft/sdc/System_DFT_capture.sdc completed, with 1 WARNING
+[09/04 03:07:35   170s] WARNING (CTE-25): Line: 8 of File ../dft/sdc/System_DFT_capture.sdc : Skipped unsupported command: set_units
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] Ending "Constraint file reading stats" (total cpu=0:00:00.4, real=0:00:01.0, peak res=332.5M, current mem=730.9M)
+[09/04 03:07:35   170s] Current (total cpu=0:02:49, real=0:11:06, peak res=332.5M, current mem=730.9M)
+[09/04 03:07:35   170s] Reading timing constraints file '../dft/sdc/System_DFT_func.sdc' ...
+[09/04 03:07:35   170s] Current (total cpu=0:02:50, real=0:11:06, peak res=332.5M, current mem=730.9M)
+[09/04 03:07:35   170s] **WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../dft/sdc/System_DFT_func.sdc, Line 9).
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_func_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_func_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_func_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_func_analysis_view.
+[09/04 03:07:35   170s] Number of path exceptions in the constraint file = 2
+[09/04 03:07:35   170s] Number of paths exceptions after getting compressed = 2
+[09/04 03:07:35   170s] INFO (CTE): Reading of timing constraints file ../dft/sdc/System_DFT_func.sdc completed, with 1 WARNING
+[09/04 03:07:35   170s] WARNING (CTE-25): Line: 8 of File ../dft/sdc/System_DFT_func.sdc : Skipped unsupported command: set_units
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=332.9M, current mem=730.9M)
+[09/04 03:07:35   170s] Current (total cpu=0:02:50, real=0:11:06, peak res=332.9M, current mem=730.9M)
+[09/04 03:07:35   170s] Reading timing constraints file '../dft/sdc/System_DFT_scan.sdc' ...
+[09/04 03:07:35   170s] Current (total cpu=0:02:50, real=0:11:06, peak res=332.9M, current mem=730.9M)
+[09/04 03:07:35   170s] **WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../dft/sdc/System_DFT_scan.sdc, Line 9).
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_scan_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_scan_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_scan_analysis_view.
+[09/04 03:07:35   170s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2M in any library for view hold_scan_analysis_view.
+[09/04 03:07:35   170s] Number of path exceptions in the constraint file = 2
+[09/04 03:07:35   170s] Number of paths exceptions after getting compressed = 2
+[09/04 03:07:35   170s] INFO (CTE): Reading of timing constraints file ../dft/sdc/System_DFT_scan.sdc completed, with 1 WARNING
+[09/04 03:07:35   170s] WARNING (CTE-25): Line: 8 of File ../dft/sdc/System_DFT_scan.sdc : Skipped unsupported command: set_units
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=333.3M, current mem=732.4M)
+[09/04 03:07:35   170s] Current (total cpu=0:02:50, real=0:11:06, peak res=333.3M, current mem=732.4M)
+[09/04 03:07:35   170s] **WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+[09/04 03:07:35   170s] Summary for sequential cells idenfication: 
+[09/04 03:07:35   170s] Identified SBFF number: 146
+[09/04 03:07:35   170s] Identified MBFF number: 0
+[09/04 03:07:35   170s] Not identified SBFF number: 0
+[09/04 03:07:35   170s] Not identified MBFF number: 0
+[09/04 03:07:35   170s] Number of sequential cells which are not FFs: 28
+[09/04 03:07:35   170s] 
+[09/04 03:07:35   170s] Total number of combinational cells: 433
+[09/04 03:07:35   170s] Total number of sequential cells: 174
+[09/04 03:07:35   170s] Total number of tristate cells: 10
+[09/04 03:07:35   170s] Total number of level shifter cells: 0
+[09/04 03:07:35   170s] Total number of power gating cells: 0
+[09/04 03:07:35   170s] Total number of isolation cells: 0
+[09/04 03:07:35   170s] Total number of power switch cells: 0
+[09/04 03:07:35   170s] Total number of pulse generator cells: 0
+[09/04 03:07:35   170s] Total number of always on buffers: 0
+[09/04 03:07:35   170s] Total number of retention cells: 0
+[09/04 03:07:35   170s] List of usable buffers: BUFX2M BUFX10M BUFX12M BUFX14M BUFX16M BUFX18M BUFX20M BUFX24M BUFX32M BUFX3M CLKBUFX1M BUFX4M BUFX5M BUFX6M BUFX8M CLKBUFX12M CLKBUFX16M CLKBUFX20M CLKBUFX24M CLKBUFX2M CLKBUFX3M CLKBUFX32M CLKBUFX40M CLKBUFX4M CLKBUFX6M CLKBUFX8M
+[09/04 03:07:35   170s] Total number of usable buffers: 26
+[09/04 03:07:35   170s] List of unusable buffers:
+[09/04 03:07:35   170s] Total number of unusable buffers: 0
+[09/04 03:07:35   170s] List of usable inverters: CLKINVX1M CLKINVX12M CLKINVX16M CLKINVX20M CLKINVX24M CLKINVX2M CLKINVX3M CLKINVX32M CLKINVX40M CLKINVX4M CLKINVX6M CLKINVX8M INVX10M INVX12M INVX14M INVX16M INVX18M INVX2M INVX1M INVX20M INVX24M INVX32M INVX4M INVX3M INVX5M INVXLM INVX6M INVX8M
+[09/04 03:07:35   170s] Total number of usable inverters: 28
+[09/04 03:07:35   170s] List of unusable inverters:
+[09/04 03:07:35   170s] Total number of unusable inverters: 0
+[09/04 03:07:35   170s] List of identified usable delay cells: DLY1X1M DLY1X4M DLY2X1M DLY2X4M DLY3X1M DLY3X4M DLY4X1M DLY4X4M
+[09/04 03:07:35   170s] Total number of identified usable delay cells: 8
+[09/04 03:07:35   170s] List of identified unusable delay cells:
+[09/04 03:07:35   170s] Total number of identified unusable delay cells: 0
+[09/04 03:07:35   170s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/04 03:07:50   175s] <CMD> fit
+[09/04 03:10:22   201s] <CMD> floorPlan -d 120.13 120.13 0.0 0.0 0.0 0.0
+[09/04 03:10:22   201s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[09/04 03:10:22   201s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst *
+[09/04 03:10:22   201s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst *
+[09/04 03:10:47   205s] <CMD> fit
+[09/04 03:10:58   207s] <CMD> fit
+[09/04 03:13:26   232s] <CMD> fit
+[09/04 03:31:33   412s] <CMD> init_design
+[09/04 03:31:33   412s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/04 03:31:33   412s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[09/04 03:31:33   412s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/04 03:31:56   416s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[09/04 03:31:57   416s] Innovus terminated by user interrupt.

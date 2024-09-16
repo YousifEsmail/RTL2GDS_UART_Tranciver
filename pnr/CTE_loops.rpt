@@ -1,0 +1,19 @@
+     +--------------------------------------------------------------------+ 
+     |                          Pin                          |    Cell    | 
+     |-------------------------------------------------------+------------| 
+     | u_UART/u_UART_RX_top/u_FSM/FE_OFC52_PAR_CHK_New_bit/A |     BUFX2M | 
+     | u_UART/u_UART_RX_top/u_FSM/FE_OFC52_PAR_CHK_New_bit/Y |     BUFX2M | 
+     |                     u_UART/u_UART_RX_top/u_FSM/U18/BN | NAND4BBX1M | 
+     |                      u_UART/u_UART_RX_top/u_FSM/U18/Y | NAND4BBX1M | 
+     |             u_UART/u_UART_RX_top/u_data_sampler/U15/A |   NAND2X2M | 
+     |             u_UART/u_UART_RX_top/u_data_sampler/U15/Y |   NAND2X2M | 
+     |            u_UART/u_UART_RX_top/u_data_sampler/U13/B1 | OAI2BB2X1M | 
+     |             u_UART/u_UART_RX_top/u_data_sampler/U13/Y | OAI2BB2X1M | 
+     |                   u_UART/u_UART_RX_top/u_STR_CHK/U2/A |    AND3X2M | 
+     |                   u_UART/u_UART_RX_top/u_STR_CHK/U2/Y |    AND3X2M | 
+     |                     u_UART/u_UART_RX_top/u_FSM/U28/AN |  NAND2BX2M | 
+     |                      u_UART/u_UART_RX_top/u_FSM/U28/Y |  NAND2BX2M | 
+     |                      u_UART/u_UART_RX_top/u_FSM/U10/C |    NOR3X2M | 
+     |                      u_UART/u_UART_RX_top/u_FSM/U10/Y |    NOR3X2M | 
+     | u_UART/u_UART_RX_top/u_FSM/FE_OFC52_PAR_CHK_New_bit/A |     BUFX2M | 
+     +--------------------------------------------------------------------+ 
